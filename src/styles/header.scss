@@ -1,0 +1,60 @@
+nav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.229);
+  background-color: whitesmoke;
+
+  > div {
+    display: flex;
+    align-items: center;
+    > h1 {
+      color: brown;
+    }
+
+    > svg {
+      color: brown;
+      font-size: 2rem;
+      transition: color 0.3s;
+      &:hover {
+        color: rgb(33, 2, 2);
+      }
+    }
+    > a {
+      color: brown;
+      margin: 0 1.8rem;
+
+      transition: color 0.3s;
+      &:hover {
+        color: rgb(33, 2, 2);
+      }
+      > svg {
+        color: brown;
+        transition: inherit;
+        font-size: 1.5rem;
+        &:hover {
+          color: rgb(33, 2, 2);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0.3rem;
+    > div > a {
+      margin: 0 0.4rem;
+    }
+    > div {
+      > h1 {
+        font-size: 1.2rem;
+      }
+      > svg {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

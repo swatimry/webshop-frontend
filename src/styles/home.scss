@@ -1,0 +1,61 @@
+.home-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.home-container::before {
+  content: "";
+  background-image: url("../assests/coffee-beans-dark-background-top-view-coffee-concept_1220-6299.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.95;
+  z-index: -1;
+}
+
+.home {
+  height: 100vh;
+
+  padding: 2rem;
+  text-align: center;
+  .menudiv {
+    margin-top: 2rem;
+    .menubutton {
+      align-items: center;
+      width: 10rem;
+      background-color: brown;
+      color: white;
+      text-align: center;
+      border: none;
+      font-size: 1rem;
+      border-radius: 10px;
+      padding: 0.8rem;
+      cursor: pointer;
+      transition: background-color 0.4s;
+      &:hover {
+        background-color: rgb(59, 35, 4);
+      }
+    }
+  }
+}
+
+.coffehead {
+  margin: 13rem auto;
+  max-width: 600px;
+}
+
+.coffehead h1,
+.coffehead p {
+  color: whitesmoke;
+  font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+}

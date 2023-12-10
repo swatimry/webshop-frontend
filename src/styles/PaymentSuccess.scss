@@ -1,0 +1,44 @@
+.paymentsuccess {
+  height: 80vh;
+  width: 100%;
+  > main {
+    padding-top: 2rem;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    > svg {
+      color: rgb(12, 147, 12);
+      font-size: 3.5rem;
+    }
+    > h1 {
+      text-transform: uppercase;
+      text-align: center;
+      margin: 2rem;
+      font: 100 2.2rem "Roboto";
+    }
+    > p {
+      margin: 2rem 0;
+    }
+    > a {
+      cursor: pointer;
+      border: none;
+      padding: 0.8rem;
+      background-color: brown;
+      color: white;
+      border-radius: 5px;
+      width: 50%;
+
+      &:hover {
+        background-color: rgb(55, 5, 5);
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .paymentsuccess {
+    > main > h1 {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.menuclass {
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+#menu {
+  width: 100%;
+
+  background-color: white;
+  padding: 4rem;
+
+  > h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    color: rgb(55, 5, 5);
+    font-family: "Roboto";
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.menuitems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .menuitems {
+    flex-direction: column;
+  }
+}
+.griddiv {
+  text-align: center; /* Center the content horizontally within the grid cell */
+  display: flex;
+  justify-content: center;
+}

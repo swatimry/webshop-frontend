@@ -1,0 +1,62 @@
+.orderconfirm {
+  height: 80vh;
+  width: 100%;
+  > main {
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+    > h1 {
+      text-transform: uppercase;
+      text-align: center;
+      margin: 2rem;
+      font: 100 2.4rem "Roboto";
+    }
+    > form {
+      justify-content: center;
+      > div {
+        margin: auto;
+        background-color: rgb(246, 246, 246);
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        padding: 1rem;
+
+        margin-top: 1rem;
+      }
+      > button {
+        cursor: pointer;
+        border: none;
+        padding: 0.8rem;
+        background-color: brown;
+        color: white;
+        border-radius: 5px;
+        width: 50%;
+        margin: 2rem 0;
+        &:hover {
+          background-color: rgb(55, 5, 5);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .orderconfirm {
+    > main {
+      width: 80%;
+
+      > h1 {
+        font-size: 1.5rem;
+      }
+      > form {
+        > div {
+          width: 100%;
+        }
+        > button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

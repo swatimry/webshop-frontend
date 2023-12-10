@@ -1,0 +1,67 @@
+.contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    90deg,
+    rgba(67, 4, 8, 1) 49%,
+    rgba(99, 4, 11, 1) 97%
+  );
+
+  > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 40%;
+    height: 70%;
+    justify-content: center;
+    border-radius: 2%;
+    > h2 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-family: "Roboto";
+      margin: 1.5rem 0;
+      //  color: rgb(33, 2, 2);
+      color: brown;
+    }
+    > input,
+    > textarea,
+    > button {
+      padding: 1rem;
+      outline: none;
+      border: 1px solid rgb(202, 202, 202);
+      margin: 0.5rem;
+      width: 60%;
+      border-radius: 5px;
+    }
+    .contactbutton {
+      background-color: brown;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(33, 2, 2);
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    height: 70vh;
+    > form {
+      width: 100%;
+      height: 100%;
+      border-radius: 0%;
+    }
+  }
+}
