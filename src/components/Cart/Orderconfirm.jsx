@@ -62,7 +62,7 @@ const Orderconfirm = () => {
         }
       );
       const options = {
-        key: process.env.REACT_APP_RAZORPAY_KEY,
+        key:"rzp_test_aX4yXcwPUyNXzW",
         amount: order.totalAmount,
         currency: "INR",
         name: "Brewery coffee",
